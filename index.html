@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Snippet Sheet</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CSS Snippet Sheet</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eaque delectus quae dolorem facilis labore dolorum recusandae quibusdam. Commodi quidem et nam distinctio officia eum magnam fugit. Hic voluptatem quia obcaecati nihil assumenda neque a recusandae, vel error amet nam!</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="content">
+                <article class="card">
+                    <h2 class="cardTitle">Flexbox Column</h2>
+                    <code>
+                        .parent { 
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;display: flex;
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: column;
+                            <br>
+                        }
+                    </code>
+                    <p class="cardDescription">
+                        This block of code enables flexbox to be active with the <b>flow direction</b> to be "column". This changes the axis and the flow of the page from <i>left-to-right</i> by default to <i>top-to-bottom</i>. 
+                    </p>
+                </article>
+                <article class="card">
+                    <h2 class="cardTitle">Flexbox Row</h2>
+                    <code>
+                        .parent { 
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;display: flex;
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: row;
+                            <br>
+                        }
+                    </code>
+                    <p class="cardDescription">
+                        This block of code enables flexbox to be active with the <b>flow direction</b> to be "row". This means the content flows from <i>left-to-right</i>.
+                    </p>
+                </article>
+                <article class="card">
+                    <h2 class="cardTitle">Flexbox Center</h2>
+                    <code>
+                        .parent { 
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;display: flex;
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;justify-content: center;
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;align-items: center;
+                            <br>
+                        }
+                    </code>
+                    <p class="cardDescription">
+                        This block of code enables flexbox to be active and completely <b>centers</b> to content within its parent element.
+                    </p>
+                </article>
+            </section>
+            <section class="content">
+                <article class="card">
+                    <h2 class="cardTitle">CSS Grid</h2>
+                    <code>
+                        .parent {
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;display: grid;
+                            <br>
+                        }
+                    </code>
+                    <p class="cardDescription">
+                        This block of code enables grid.
+                    </p>
+                </article>
+                <article class="card">
+                    <h2 class="cardTitle">CSS Grid Rows & Columns</h2>
+                    <code>
+                        .parent {
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;display: grid;
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;grid-template-rows: 1fr 1fr 1fr;
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr 1fr 1fr;
+                            <br>
+                        }
+                    </code>
+                    <p class="cardDescription">
+                        This block of code enables grid and would display a 3x3 grid of content.
+                    </p>
+                </article>
+                <article class="card">
+                    <h2 class="cardTitle">CSS Grid Template Areas</h2>
+                    <code>
+                        .parent {
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;display: grid;
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;grid-template-rows: 1fr 1fr 1fr;
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr 1fr 1fr;
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;grid-template-areas:
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;"nav nav nav"
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;"main main sidebar"
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;"foot foot foot"
+                            <br>
+                        }
+                        <br>
+                        nav (child) {
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;grid-area: nav;
+                            <br>
+                        }
+                        main (child) {
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;grid-area: main;
+                            <br>
+                        }
+                        sidebar (child) {
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;grid-area: sidebar;
+                            <br>
+                        }
+                        foot (child) {
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;grid-area: foot;
+                            <br>
+                        }
+                    </code>
+                    <p class="cardDescription">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, unde quos! Quasi placeat et earum accusantium odio repudiandae perspiciatis autem.
+                    </p>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <span>Made with <span>love</span></span>
+            <ul>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">X</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
